@@ -17,4 +17,12 @@
   <ItemGroup>
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\EjemploGrid.xaml.cs">
+      <DependentUpon>EjemploGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PiedraPapelTijeraGrid.xaml.cs">
+      <DependentUpon>PiedraPapelTijeraGrid.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

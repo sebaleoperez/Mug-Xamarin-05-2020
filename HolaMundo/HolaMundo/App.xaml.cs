@@ -11,7 +11,7 @@ namespace HolaMundo
         {
             InitializeComponent();
 
-            MainPage = new ListadoNumeros();
+            MainPage = new PiedraPapelTijeraGrid();
         }
 
         protected override void OnStart()
