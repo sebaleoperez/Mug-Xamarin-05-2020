@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.Views.Gatos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Collage_of_Six_Cats-02.jpg/1200px-Collage_of_Six_Cats-02.jpg" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

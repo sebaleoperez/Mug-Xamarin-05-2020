@@ -23,15 +23,17 @@ namespace HolaMundo.Views
             });
         }
 
-        void Button_Clicked(System.Object sender, System.EventArgs e)
+        async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
             if (entryUsuario.Text == "usuario" && entryClave.Text == "12345")
             {
-                DisplayAlert("Login", "Usuario Valido", "OK");
+                await DisplayAlert("Login", "Usuario Valido", "OK");
+                //await Navigation.PushAsync(new PiedraPapelTijeraGrid());
+                App.Current.MainPage = new NavigationPage(new PiedraPapelTijeraGrid());
             }
             else
             {
-                DisplayAlert("Login", "Usuario Invalido", "OK");
+                await DisplayAlert("Login", "Usuario Invalido", "OK"); 
             }
         }
     }
