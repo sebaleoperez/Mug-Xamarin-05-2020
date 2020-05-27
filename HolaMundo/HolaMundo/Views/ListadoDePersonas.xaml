@@ -5,7 +5,26 @@
             <Entry x:Name="entryNumero" Keyboard="Numeric" />
             <Button Clicked="Button_Clicked" Text="Aceptar" />
 
-            <ListView x:Name="listaPersonas" ItemTapped="listaPersonas_ItemTapped" />
+            <!--ListView x:Name="listaPersonas" ItemTapped="listaPersonas_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Nombre}"
+                                   Detail="{Binding Rol}"
+                                   ImageSource="{Binding Imagen}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView-->
+
+            <CollectionView x:Name="listaPersonas">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Image Source="{Binding Imagen}" Aspect="AspectFit" HeightRequest="100" Grid.Row="0" Grid.Column="1" />
+                            <Label Text="{Binding Nombre}" TextColor="Red" FontSize="20" Grid.Row="0" Grid.Column="0" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

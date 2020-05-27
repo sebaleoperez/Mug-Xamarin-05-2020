@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.Views.ListadoNumerosBindable">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BindableLayout.ItemsSource="{Binding ListaCanciones}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10">
+                            <Label Text="{Binding Nombre}" FontSize="20" HorizontalOptions="Start" />
+                            <Label Text="{Binding Artista}" FontSize="20" HorizontalOptions="Start" />
+                            <Label Text="{Binding Album}" FontSize="20" HorizontalOptions="Start" />
+                            <Label Text="{Binding Puntaje}" FontSize="50" HorizontalOptions="Start" />
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

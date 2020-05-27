@@ -34,7 +34,7 @@ namespace HolaMundo
             MainPage = masterDetailPage;
             */
 
-            MainPage = new NavigationPage(new ListadoDePersonas());
+            MainPage = new NavigationPage(new ListadoNumerosBindable());
 
         }
 

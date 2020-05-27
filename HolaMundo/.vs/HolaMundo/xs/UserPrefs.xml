@@ -1,26 +1,29 @@
 ﻿<Properties StartupConfiguration="{A4CA4549-138D-491C-9B39-08451289733F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/App.xaml.cs">
     <Files>
-      <File FileName="HolaMundo/Views/ListadoDePersonas.xaml" Line="6" Column="63" />
-      <File FileName="HolaMundo/Views/ListadoDePersonas.xaml.cs" Line="16" Column="10" />
-      <File FileName="HolaMundo/App.xaml.cs" Line="37" Column="42" />
+      <File FileName="HolaMundo/Views/ListadoNumerosBindable.xaml" Line="1" Column="1" />
+      <File FileName="HolaMundo/Views/ListadoNumerosBindable.xaml.cs" Line="1" Column="1" />
+      <File FileName="HolaMundo/App.xaml.cs" Line="37" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HolaMundo" expanded="True" selected="True">
+          <Node name="HolaMundo" expanded="True">
             <Node name="HolaMundo" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="ListadoDePersonas.xaml" expanded="True" />
+                <Node name="ListadoNumeros.xaml" expanded="True" />
+                <Node name="ListadoNumerosBindable.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.HolaMundo.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.HolaMundo.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
