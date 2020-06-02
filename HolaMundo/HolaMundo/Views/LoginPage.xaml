@@ -4,9 +4,9 @@
              x:Class="HolaMundo.Views.LoginPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" x:Name="stackLayoutPrincipal" BackgroundColor="LightGray">
-            <Entry Placeholder="Usuario" x:Name="entryUsuario" FontSize="30" FontAttributes="Bold" />
-            <Entry Placeholder="Clave" x:Name="entryClave" IsPassword="True" />
-            <Button Text="Validar" Clicked="Button_Clicked" />
+            <Entry Placeholder="Usuario" Text="{Binding Username}" x:Name="entryUsuario" FontSize="30" FontAttributes="Bold" />
+            <Entry Placeholder="Clave" Text="{Binding Password}" x:Name="entryClave" IsPassword="True" />
+            <Button Text="Validar" Command="{Binding LoginCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
