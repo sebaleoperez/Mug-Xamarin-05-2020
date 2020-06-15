@@ -34,7 +34,7 @@ namespace HolaMundo
             MainPage = masterDetailPage;
             */
 
-            MainPage = new NavigationPage(new StarWars());
+            MainPage = new NavigationPage(new DemoCustomRenderers());
 
         }
 

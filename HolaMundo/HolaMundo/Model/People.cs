@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using SQLite;
 
 namespace HolaMundo.Model
 {
     public class People
     {
+        [PrimaryKey,AutoIncrement]
+        public int id { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
@@ -44,19 +48,19 @@ namespace HolaMundo.Model
         /// <summary>
         /// 
         /// </summary>
-        public List<string> films { get; set; }
+        //public List<string> films { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<string> species { get; set; }
+        //public List<string> species { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<string> vehicles { get; set; }
+        //public List<string> vehicles { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<string> starships { get; set; }
+        //public List<string> starships { get; set; }
         /// <summary>
         /// 
         /// </summary>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using HolaMundo.Model;
@@ -39,8 +40,20 @@ namespace HolaMundo.ViewModel
         public async Task LoadViewModel()
         {
             IsBusy = true;
-            PeopleService peopleService = new PeopleService();
-            PersonajePrincipal = await peopleService.GetPeople("1");
+            DatabaseService databaseService = new DatabaseService();
+
+            //PeopleService peopleService = new PeopleService();
+            //PersonajePrincipal = await peopleService.GetPeople("1");
+
+            //List<People> listapersonajes = new List<People>();
+            //listapersonajes.Add(PersonajePrincipal);
+
+            // await databaseService.Store(listapersonajes);
+
+
+            //
+            PersonajePrincipal = (await databaseService.GetPeople())[0];
+
             IsBusy = false;
         }
 

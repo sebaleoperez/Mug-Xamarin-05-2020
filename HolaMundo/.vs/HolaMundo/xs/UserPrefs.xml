@@ -1,27 +1,25 @@
 ﻿<Properties StartupConfiguration="{A4CA4549-138D-491C-9B39-08451289733F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/Model/People.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo.Android/CustomRenderers/ShadowedLabelRenderer.cs">
     <Files>
-      <File FileName="HolaMundo/Services/PeopleServices.cs" Line="17" Column="1" />
-      <File FileName="HolaMundo/Model/People.cs" Line="1" Column="1" />
-      <File FileName="HolaMundo/Views/StarWars.xaml" Line="1" Column="1" />
-      <File FileName="HolaMundo/Views/StarWars.xaml.cs" Line="27" Column="1" />
-      <File FileName="HolaMundo/App.xaml.cs" Line="37" Column="55" />
-      <File FileName="HolaMundo/ViewModel/StarWars.cs" Line="7" Column="10" />
+      <File FileName="HolaMundo/CustomControls/ShadowedLabel.cs" Line="7" Column="6" />
+      <File FileName="HolaMundo.Android/CustomRenderers/ShadowedLabelRenderer.cs" Line="9" Column="39" />
+      <File FileName="HolaMundo/Views/DemoCustomRenderers.xaml" Line="13" Column="1" />
+      <File FileName="HolaMundo/Views/DemoCustomRenderers.xaml.cs" Line="1" Column="1" />
+      <File FileName="HolaMundo/App.xaml.cs" Line="37" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HolaMundo" expanded="True">
+          <Node name="HolaMundo" expanded="True" selected="True">
             <Node name="HolaMundo" expanded="True">
-              <Node name="Model" expanded="True">
-                <Node name="People.cs" selected="True" />
-              </Node>
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
+              <Node name="CustomControls" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="StarWars.xaml" expanded="True" />
+                <Node name="DemoCustomRenderers.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="HolaMundo.Android" expanded="True">
+              <Node name="CustomRenderers" expanded="True" />
             </Node>
           </Node>
         </State>
