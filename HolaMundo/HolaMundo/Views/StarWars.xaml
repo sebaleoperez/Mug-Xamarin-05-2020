@@ -12,6 +12,7 @@
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" />
             <Label Text="{Binding PersonajePrincipal.name}" />
+            <Button Command="{Binding TextToSpeechCommand}" Text="Hablar" />
         </StackLayout>
 
     </ContentPage.Content>
