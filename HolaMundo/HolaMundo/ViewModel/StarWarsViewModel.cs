@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
+using HolaMundo.Helpers;
 using HolaMundo.Model;
 using HolaMundo.Services;
+using Xamarin.Forms;
 
 namespace HolaMundo.ViewModel 
 {
@@ -37,9 +39,33 @@ namespace HolaMundo.ViewModel
             }
         }
 
+        private Command _textToSpeechCommand;
+        public Command TextToSpeechCommand
+        {
+            get
+            {
+                return _textToSpeechCommand;
+            }
+            set
+            {
+                _textToSpeechCommand = value;
+                OnPropertyChanged("TextToSpeechCommand");
+            }
+        }
+
+        public StarWarsViewModel()
+        {
+            TextToSpeechCommand = new Command(
+                () =>
+                {
+                    Xamarin.Essentials.TextToSpeech.SpeakAsync("Hello World");
+                });
+        }
+
         public async Task LoadViewModel()
         {
             IsBusy = true;
+            
             DatabaseService databaseService = new DatabaseService();
 
             //PeopleService peopleService = new PeopleService();
@@ -53,6 +79,9 @@ namespace HolaMundo.ViewModel
 
             //
             PersonajePrincipal = (await databaseService.GetPeople())[0];
+            
+            //var textToSpeech = DependencyService.Get<ITextToSpeech>();
+            //textToSpeech.Speak("Hello World"); 
 
             IsBusy = false;
         }
